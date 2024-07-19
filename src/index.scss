@@ -1,0 +1,35 @@
+/** 
+Se crearon dos variables la cual fue negro y blanco para poder utilizarlas, ademas
+estamos aplicando scss en fora de cascada para aplicar estilos
+*/
+
+$dark: #000;
+$light: #fff;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 2rem;
+  transition-duration: 0.3s;
+
+  &.dark {
+    background-color: $dark;
+    color: $light;
+  }
+
+  &.light {
+    background-color: $light;
+    color: $dark;
+  }
+}
